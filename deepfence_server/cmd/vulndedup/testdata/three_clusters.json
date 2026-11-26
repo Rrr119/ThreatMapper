@@ -1,0 +1,61 @@
+{
+  "granularity": "cve",
+  "include_occurrences": true,
+  "window": { "offset": 0, "size": 50 },
+  "findings": [
+    {
+      "cve_id": "CVE-2024-3094",
+      "cve_severity": "critical",
+      "cve_cvss_score": 10.0,
+      "cve_fixed_in": "xz-utils 5.6.2",
+      "cluster_id": "cluster-a",
+      "cluster_name": "prod-east",
+      "namespace": "payments",
+      "workload_id": "wl-checkout-a",
+      "workload_name": "checkout",
+      "workload_kind": "Deployment",
+      "pod_name": "checkout-7d4b8c9f6-x2k9p",
+      "image_id": "img-checkout-a",
+      "image_name": "acme/checkout:v2.4.0",
+      "host_id": "host-a-1",
+      "host_name": "node-east-1",
+      "scan_id": "scan-a"
+    },
+    {
+      "cve_id": "CVE-2024-3094",
+      "cve_severity": "critical",
+      "cve_cvss_score": 10.0,
+      "cve_fixed_in": "xz-utils 5.6.2",
+      "cluster_id": "cluster-b",
+      "cluster_name": "prod-west",
+      "namespace": "payments",
+      "workload_id": "wl-checkout-b",
+      "workload_name": "checkout",
+      "workload_kind": "Deployment",
+      "pod_name": "checkout-6c5f9b7d8-q4r2m",
+      "image_id": "img-checkout-b",
+      "image_name": "acme/checkout:v2.4.0",
+      "host_id": "host-b-1",
+      "host_name": "node-west-1",
+      "scan_id": "scan-b"
+    },
+    {
+      "cve_id": "CVE-2024-3094",
+      "cve_severity": "critical",
+      "cve_cvss_score": 10.0,
+      "cve_fixed_in": "xz-utils 5.6.2",
+      "cluster_id": "cluster-c",
+      "cluster_name": "prod-eu",
+      "namespace": "payments",
+      "workload_id": "wl-checkout-c",
+      "workload_name": "checkout",
+      "workload_kind": "Deployment",
+      "pod_name": "checkout-5f8d7c6b9-t8n3v",
+      "image_id": "img-checkout-c",
+      "image_name": "acme/checkout:v2.4.0",
+      "host_id": "host-c-1",
+      "host_name": "node-eu-1",
+      "scan_id": "scan-c"
+    }
+  ]
+}

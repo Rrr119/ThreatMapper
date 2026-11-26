@@ -282,6 +282,11 @@ func SetupRoutes(r *chi.Mux, serverPort string, serveOpenapiDocs bool, ingestC c
 				r.Post("/containers", dfHandler.SearchContainers)
 				r.Post("/images", dfHandler.SearchContainerImages)
 				r.Post("/vulnerabilities", dfHandler.SearchVulnerabilities)
+				// Cross-cluster de-duplicated / workload-aggregated vulnerability views.
+				// These are additive endpoints; /search/vulnerabilities is unchanged.
+				r.Post("/vulnerabilities/deduplicated", dfHandler.AggregateVulnerabilities)
+				r.Post("/vulnerabilities/workload-aggregation", dfHandler.AggregateVulnerabilitiesByWorkload)
+				r.Post("/vulnerabilities/drilldown", dfHandler.GetVulnerabilityDrillDown)
 				r.Post("/secrets", dfHandler.SearchSecrets)
 				r.Post("/malwares", dfHandler.SearchMalwares)
 				r.Post("/cloud-compliances", dfHandler.SearchCloudCompliances)

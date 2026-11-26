@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid43093",
+  "B": "/home/dev/feedback/uid43093",
+  "sha": "c189cff728780c70dff608b443a292b01180dbb6",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "deepfence",
+    "repo": "ThreatMapper",
+    "sha": "c189cff728780c70dff608b443a292b01180dbb6"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "ThreatMapper",
+    "cloneUrl": "https://github.com/Rrr119/ThreatMapper.git"
+  },
+  "at": "2026-11-26T16:05:09.456Z"
+}
